@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Healthy Leaf</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color:rgb(74,9,93);">GRAPE LEAF DISEASE DETECTION</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/Tomato___Septoria_leaf_spot.JPG' )}}" alt="User Image" style="width:500px;height:500px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(60, 9, 111); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h4 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" align="justify"><b> Grape leaves are not only edible but also quite nutritious.They're often used in cooking, particularly in Mediterranean and Middle Eastern cuisines, to wrap ingredients like rice, vegetables, and meats. Stuffed grape leaves, also known as dolmas or dolmades, are a popular dish made by wrapping seasoned rice or meat mixtures in grape leaves and cooking them. </b> </h4>
+                       <br><h4><b><u>Benefits :</u></b></h4>
+                    <h6 align="justify" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                        <br><b><i>1.Nutrient Content:</i></b> Grape leaves are rich in vitamins and minerals, including vitamin A, vitamin C, vitamin K, calcium, iron, and manganese. These nutrients are essential for various bodily functions, including immune function, bone health, and blood clotting.
+                        <br><br><b><i></i>2.Antioxidants: </i></b>Like grapes themselves, grape leaves contain antioxidants such as flavonoids, polyphenols, and carotenoids. These compounds help protect cells from damage caused by harmful molecules called free radicals, potentially reducing the risk of chronic diseases such as heart disease and cancer.
+                            <br><br><b><i>3.Anti-Inflammatory Properties:</i></b> Some research suggests that grape leaves may have anti-inflammatory effects, which could be beneficial for conditions characterized by inflammation, such as arthritis and inflammatory bowel diseases.
+                                <br><br><b><i>4.Digestive Health:</i></b> Grape leaves contain dietary fiber, which is important for digestive health. Fiber helps promote regular bowel movements, prevent constipation, and support the growth of beneficial bacteria in the gut.
+                                    <br><br><b><i>5.Potential Blood Sugar Regulation: </i></b>Some studies suggest that certain compounds found in grape leaves may help regulate blood sugar levels, which could be beneficial for people with diabetes or those at risk of developing diabetes.
+                                        <br><br><b><i>6.Weight Management: </i></b>Due to their low calorie and high fiber content, grape leaves can be a nutritious addition to a weight management diet. They can help you feel full and satisfied with fewer calories, potentially aiding in weight loss or weight maintenance. </h6>
+
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

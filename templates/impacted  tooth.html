@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>ESCA</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color:rgb(74,9,93) ;">GRAPE LEAF DISEASE DETECTION</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/Tomato___Leaf_Mold.JPG' )}}" alt="User Image" style="width:500px;height:500px;">
+
+                </span>
+                <br><h4 style="font-family: 'Times New Roman', Times, serif;"><b><u>Treatment:</u></b></h4>
+                <h6 align="justify" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    <br><b><i>1.Cultural Practices:</i></b>
+                    <br><b>* Pruning: </b>Prune infected wood during the dormant season to remove cankers and reduce inoculum levels.
+                    <br><b>* Sanitation:</b> Remove and destroy infected wood, including pruning debris and dead vines, to reduce the spread of the disease.
+                    <br><b>* Avoid Wounding:</b> Minimize mechanical damage to grapevines, as wounds provide entry points for fungal pathogens.
+                    <br><br><b><i>2.Chemical Control:</i></b>
+                     <br><b>* Fungicides:</b> Apply fungicides to pruning wounds and grapevine cuts to protect against infection by wood decay fungi. Fungicides containing active ingredients such as thiophanate-methyl, tebuconazole, and propiconazole may provide some control.
+                    <br> <b>* Protectant Sprays:</b> Apply protectant fungicides to grapevine foliage during periods of high disease pressure to prevent foliar symptoms.
+                    <br><br> <b><i>3.Biological Control:</i></b>
+                    <br> <b>* Biocontrol Agents:</b> Use beneficial microorganisms such as Trichoderma spp. or Bacillus subtilis to suppress fungal growth and protect grapevines from ESCA infection. Biocontrol agents can be applied to pruning wounds or incorporated into the soil around grapevines.
+                    
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(60, 9, 111); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h4 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" align="justify"><b>ESCA, also known as "Esca complex," is a grapevine trunk disease caused by several fungal pathogens, including Phaeomoniella chlamydospora, Phaeoacremonium minimum, and Fomitiporia mediterranea. ESCA is a significant threat to grapevines worldwide and can lead to vine decline and death if left untreated. </b> </h4>
+                    <br><br><br><br><br><br><br><h6 align="justify" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"></h6>
+                    <b><i>4.Cultural Practices:</i></b>
+                        <br> <b>* Avoid Stress:</b> Minimize stress on grapevines by providing adequate irrigation, nutrition, and canopy management to promote vine health and vigor.
+                        <br> <b>* Avoid Overcropping:</b> Avoid excessive crop loads that can stress grapevines and make them more susceptible to disease.
+                         <br><b><i>5.Vineyard Management:</i></b>                            Vineyard Renewal: Consider replanting with disease-resistant or tolerant grapevine rootstocks to replace infected vines and reduce disease pressure in the vineyard.
+                         <br> <b>* Canopy Management:</b> Manage the vine canopy to improve airflow and reduce humidity, which can help reduce fungal infection and disease development.
+                         <br>  <br><b><i>6.Monitoring and Prevention:</i></b>
+                         <br><b>* Regular Inspections:</b> Monitor grapevines regularly for symptoms of ESCA disease, including leaf discoloration, dieback, and trunk cankers.
+                         <br><b>* Early Detection:</b> Promptly remove and destroy infected vines and wood to prevent the spread of the disease to healthy grapevines.
+                         <br><b>* Quarantine: </b>Quarantine new plant material and avoid planting infected vines to prevent the introduction and spread of ESCA in the vineyard.
+                         <br> <br><b><i></i>7.Integrated Pest Management (IPM):</i></b><br>
+                         Implement an integrated pest management approach that combines cultural, chemical, and biological control methods to effectively manage ESCA disease and minimize the use of synthetic pesticides.
+                     
+
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

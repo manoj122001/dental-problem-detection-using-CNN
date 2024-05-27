@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Block Rot</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/FLACHERIE.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color:rgb(74, 9, 93)">GRAPE LEAF DISEASE DETECTION</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/Tomato___Late_blight.JPG' )}}" alt="User Image" style="width:500px;height:500px;">
+                    
+
+                </span>
+                <br><h4 style="font-family: 'Times New Roman', Times, serif;"><b><u>Treatment:</u></b></h4>
+                    <h6 align="justify" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                       <br> <b><i>1.Cultural Practices:</i></b><br>
+<b> * Sanitation:</b> Remove and destroy infected plant material, including infected leaves, fruit, and canes, to reduce the source of inoculum.<br>
+<b>* Pruning:</b> Prune vines to improve air circulation and reduce humidity around the grape clusters, which can help inhibit fungal growth.
+<br><b>* Thinning:</b> Thin grape clusters to reduce crowding and increase airflow within the canopy.
+<br><br><b><i>2.Chemical Control:</i></b><br>
+<b>* Fungicides:</b> Apply fungicides according to a regular spray schedule, especially during critical periods such as pre-bloom, bloom, and post-bloom. Fungicides containing active ingredients such as azoxystrobin, pyraclostrobin, and mancozeb are commonly used for black rot control.
+<br><b>* Protectant Sprays:</b> Apply protectant fungicides before rain or during periods of high humidity to protect grape clusters from infection.
+<br><br><b><i>3.Biological Control:</i></b>
+<br><b>* Biofungicides:</b> Use biofungicides containing beneficial microorganisms such as Bacillus subtilis or Trichoderma spp. to suppress fungal growth and protect grapevines from black rot infection.
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(60, 9, 111); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+                    <h4 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                        <b>Black rot is a common fungal disease that affects grapevines. It is caused by the fungus Guignardia bidwellii and can cause significant damage to grapevines if not managed properly. </h4>
+                            <br><br><br><br><br><br><br>   <h6 align="justify" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">        
+<br><br><b><i>4.Cultural Practices:</i></b>
+<br><b>* Cover Crops:</b> Planting cover crops between vine rows can help reduce soil moisture and compete with the black rot fungus for nutrients.
+<br><b>* Mulching:</b> Apply mulch around the base of grapevines to prevent soil splashing onto the leaves and lower parts of the vine.
+<br><br><b><i>5.Monitoring and Prevention:</i></b>
+<br><b>* Scouting:</b> Regularly inspect grapevines for symptoms of black rot disease, including dark lesions on leaves and fruit.
+<br><b>* Weather Monitoring:</b> Monitor weather conditions, especially rainfall and humidity levels, as these can influence the development and spread of black rot.
+<br><b>* Early Detection:</b> Promptly remove and destroy any infected plant material to prevent the spread of the disease to healthy vines.
+<br><br><b><i>6.Resistant Varieties:</i></b>
+<br>Planting grape varieties that are resistant or tolerant to black rot can help reduce the risk of disease development. Consult with local extension services or grape nurseries for recommendations on resistant varieties.
+<br><br><b><i>7.Integrated Pest Management (IPM):</i></b>
+<br>Implement an integrated pest management approach that combines cultural, chemical, and biological control methods to effectively manage black rot and minimize the use of synthetic pesticides.
+                    </h6>
+
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
